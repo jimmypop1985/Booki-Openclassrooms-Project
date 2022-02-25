@@ -1,0 +1,371 @@
+<!-- Booki WEbsite project for Open Classrooms Poject
+James Drummond - Developer Intern
+ Booki website helps its users to find accommodation and activities in a town of their choosing
+ This website is based on a mockup by Loik, a UI Desginer
+-->
+
+<!DOCTYPE html>
+  <html lang="en"> 
+  <!--States the language of the site is English-->
+  <head> 
+    <!--Container fpr metadata and defines specific information about the document-->
+    <meta charset="utf-8">
+    <!--Specifies the character encoding for the site-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Allows the developer to implement a responsive design by allowing control of the viewport-->
+    <script src="https://kit.fontawesome.com/3ba86adbe3.js" crossorigin="anonymous"></script>
+    <!--Imports a font kit from the FontAwesome Library allowing the use oof their fonts and icons-->
+    <link rel="stylesheet" type= "text/css" href="css/normalize.css">
+    <!--Links a css stylesheet called normalize.css which makes 
+      browsers render all elements more consistently -->
+    <link rel="stylesheet" type= "text/css" href="css/style.css">
+    <!--Links the authors own CSS stylesheet for the styling properties
+       of the document-->
+    <title>Booki</title>
+    <!--Defines the text displayed in the browsers tab-->
+  </head>
+  <body>
+    <!--Main body of the document-->
+    <main>
+      <header>
+        <div> 
+          <!--Displays the Booki logos for desktop and mobile -->
+          <img class = "deskimage no-display-mobile" src = "images/logo/Booki.png" alt ="Booki Logo" title = "Booki Logo">
+          <img class = "phoneimage no-display-desktop" src = "images/logo/Booki@3x.png" alt ="Booki Logo" title = "Booki Logo">
+        </div>
+
+        <nav class = "normal-text">
+          <!--Adds the links in the navigation bar-->
+          <a class = "medium-text nav" href = "#accomodation">Accomodations</a>
+          <a class = "medium-text nav" href = "#activities">Activities</a>
+        </nav>
+      </header>
+      <div class = "normal-text mob-margin">
+        <!--Adds the main title and subtitle-->
+        <h1 class = "title-text">Find a place for your dream vacation</h1>
+        <h3 class = "medium-text">Downtown or in nature</h3>
+        <br>
+      </div>
+      <section class = "search bold-text mob-margin">
+        <!--Creates the form for the search function and adds images, a text box
+        and text to it-->
+        <form>
+          <i class=" font-test geo fa-solid fa-location-dot grey-background"></i>
+          <input type="text" value="Marseille, France" class = "bold-text large-text text-box">
+          <input type="submit" value="Search" class = "submit large-text bold-text no-display-mobile">
+          <i class ="fa-solid fa-magnifying-glass search-icon title-text no-display-desktop"></i>
+        </form>
+      </section>
+
+      <section class = "filter mob-margin">
+        <!--Adds the filters section with the necessary images and text,
+        each filter the the title of the section are contained in their own div-->
+        <div class = "filt-text full-width filt-decor">
+          <h2 class = "large-text">Filters</h2>
+        </div>
+        <div class = "button filt-decor">
+          <i class="fa-solid fa-money-bill-wave icon blue"></i>
+          <h3 class = "label large-text">Low Cost</h3>
+          </div>
+        <div class = "button filt-decor">
+          <i class="icon fa-solid fa-child blue"></i>
+          <h3 class = "label large-text">Family-Friendly</h3>
+          </div>
+        <div class = "button filt-decor">
+          <i class="fa-solid fa-heart blue icon"></i> 
+          <h3 class = "label large-text">Romantic</h3>
+          </div>
+        <div class = "button filt-decor">
+          <i class="fa-solid fa-dog icon blue"></i>
+          <h3 class = "label large-text">Pets Allowed</h3>
+          </div>
+      </section>
+
+      <section class = "information bold-text mob-margin">
+        <!--Adds the information bulletin and the icon-->
+        <div>
+          <i class="fa-solid fa-info icon medium-text"></i>
+        </div>
+        <p class = "medium-text normal-text">More than 500 accomodations are available in this city</p>
+      </section>
+
+      <section class = big-container>
+        <!--This container has the accomodations in Marseille and the Most Popular 
+          section of the document-->
+        <article class = accom-container id = "accomodation">
+          <!--Container for the Accomodations in Marseille section-->
+          <div class = "title">
+            <!--Title for the section-->
+            <h1 class = "title-text bold-text">Accomodations In Marseille</h1>
+          </div>
+          <div class = "row-container">
+            <!--Container for the cards in this section-->
+            <a href = "#">
+              <!--This link is repeated for all cards in this section, making all 
+              elements inside the card clickable-->
+              <div class="accomodation card-style white-background">
+                <!--Creates the card-->
+                <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image of the bedroom at Auberge la Cannebière" title="Auberge la Cannebière Bedroom">
+                <!--Imports the image for the card-->
+                <div class="container">
+                  <!--Creates the container for the text and star ratings for the card-->
+                  <p class = "medium-text bold-text">Auberge la Cannebière</p> 
+                  <p class = "medium-text">Night starting at 25€</p>
+                  <div class = "stars medium-text">
+                    <!--Imports the stars for the rating annd colours them appropriately-->
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star grey"></i>
+                  </div> 
+                </div>
+              </div>
+            </a>
+            <a href = "#">
+              <div class="accomodation card-style white-background">
+                <img src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Image of the bedroom at Hotel du port" title="Hotel du port Bedroom">
+                <div class="container">
+                  <p class = "medium-text bold-text">Hotel du port</p> 
+                  <p class = "medium-text">Night starting at 52€</p>
+                  <div class = "stars medium-text">
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                  </div> 
+                </div>
+              </div>
+            </a>
+            <a href = "#">
+              <div class="accomodation card-style white-background">
+                <img src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Image of the bedroom at Les moutettes hotel" title="Les moutettes hotel Bedroom">
+                <div class="container">
+                  <p class = "medium-text bold-text">Les moutettes hotel</p> 
+                  <p class = "medium-text">Night starting at 76€</p>
+                  <div class = "stars medium-text">
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star grey"></i>
+                  </div> 
+                </div>
+              </div>
+            </a>
+            <a href = "#">
+              <div class="accomodation card-style white-background">
+                <img src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image of the bedroom at Hotel de la mer" title="Hotel de la mer Bedroom">
+                <div class="container">
+                  <p class = "medium-text bold-text">Hotel de la mer</p> 
+                  <p class = "medium-text">Night starting at 45€</p>
+                  <div class = "stars medium-text">
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star grey"></i>
+                    <i class="fa-solid fa-star grey"></i>
+                  </div> 
+                </div>
+              </div>
+            </a>
+            <a href = "#">
+              <div class="accomodation card-style white-background">
+                <img src="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Image of the bedroom at Auberge Le Panier" title="Auberge Le Panier Bedroom">
+                <div class="container">
+                  <p class = "medium-text bold-text">Auberge Le Panier</p> 
+                  <p class = "medium-text">Night starting at 23€</p>
+                  <div class = "stars medium-text">
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star grey"></i>
+                  </div> 
+                </div>
+              </div>
+            </a>
+            <a href = "#">
+              <div class="accomodation card-style white-background">
+                <img src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image of the bedroom at Hotel Chez Amina" title="Hotel Chez Amina Bedroom">
+                <div class="container">
+                  <p class = "medium-text bold-text">Hotel Chez Amina</p> 
+                  <p class = "medium-text">Night starting at 96€</p>
+                  <div class = "stars">
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                    <i class="fa-solid fa-star blue"></i>
+                  </div> 
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class = "title">
+            <a href = "#"><h2 class = "large-text bold-text">Show more</h2></a>
+          </div>
+        </article>      
+        <article class = "popular-container grey-background">
+          <!--Container for the Most Popular Section of the site-->
+          <div class = "title">
+            <!--Defines the text and icon for this section and arranges the, in a div-->
+            <h1 class = "title-text bold-text">Most Popular</h1>
+            <i class="fa-solid fa-arrow-trend-up trending"></i>
+          </div>
+          <a href = "#">
+            <!--Makes a container as a link for the cards so each one is fully clickable-->
+            <div class="popular card-style white-background">
+              <!--Container for the card-->
+              <img class = "rooms" src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image of the bedroom at Morning Sun Hotel" title="Morning Sun Hotel Bedroom">
+              <!--Imports the image for the card-->
+              <div class="container">
+                <!--container for the text and stars for the card-->
+                <p class = "medium-text bold-text">Morning Sun Hotel</p> 
+                <p class = "medium-text">Night starting at 128€</p>
+                <div class = "stars medium-text">
+                  <!--Imports the star icons and colours them accordingly-->
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                </div> 
+              </div>
+            </div>
+          </a>
+          <a href = "#">
+            <div class="popular card-style white-background">
+              <img class = "rooms" src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image of the bedroom at the Cannebière Inn" title="Cannebière Inn Bedroom">
+              <div class="container">
+                <p class = "medium-text bold-text">Au coeur de l'eau Bed and Breakfast</p> 
+                <p class = "medium-text">Night starting at 71€</p>
+                <div class = "stars medium-text">
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star grey"></i>
+                </div> 
+              </div>
+            </div>
+          </a>
+          <a href = "#">
+            <div class="popular card-style white-background">
+              <img class = "rooms" src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image of the bedroom at Tout bleu at Blanc Hotel" title="Tout bleu at Blanc Hotel Bedroom">
+              <div class="container">
+                <h4 class = "medium-text bold-text">Tout bleu at Blanc Hotel</h4> 
+                <p class = "medium-text">Night starting at 68€</p>
+                <div class = "stars medium-text">
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star grey"></i>
+                </div> 
+              </div>
+            </div>
+          </a>
+        </article>
+      </section>    
+      <br>
+      <article class = "activities" id = "activities">
+        <!--Container for the Activities seciton-->
+        <h1 class = " title-text bold-text mob-margin">Activities in Marseille</h1>
+        <!--Title for the section-->
+        <div class = "act-container">
+          <!--Container for the cards in this section-->
+          <div class = "col">
+            <!--Creates ca column for the cards, importsnt so cards of different sixes
+            can be displayed-->
+            <a href = "#">
+              <!--Container for the cards as a link to make it fully clickable-->
+              <div class = "card biggest-card card-style white-background">
+                <!--Creates the card-->
+                  <img src ="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt = "image of the Old Port in Marseille" title= "Old Port">
+                  <!--Imports the image for the card-->
+                <div>
+                  <!--Container for the text in the card-->
+                  <h4 class = "medium-text bold-text indent">Old Port</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class = "col">
+            <a href = "#">
+              <div class = "card big-card card-style">
+                <img src ="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt = "Pomegues fort in Marseille" title = "Pomegues Fort">
+                <div>
+                  <h4 class = "medium-text bold-text indent">Pomegues Fort</h4>
+                </div>
+              </div>
+            </a>
+            <a href = "#">
+              <div class = "card small-card card-style">
+                <img src ="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt = "Friout Island in Marseille" title = "Friout Island">
+                <div>
+                  <h4 class = "medium-text bold-text indent">Friout Island</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class = 'col'>
+            <a href = "#">
+              <div class = "card biggest-card card-style">
+                <img src ="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt = "Catanques National Park in Marseille" title = "Catanques National Park">
+                <div>
+                  <h4 class = "medium-text bold-text indent">Catanques National Park</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class = 'col'>
+            <a href ='#'>
+              <div class = "card med-card card-style">
+                <img src ="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt = "Notre-Dame-de-la-garde in Marseille" title = "Notre-Dame-de-la-garde">
+                <div>
+                  <h4 class = "medium-text bold-text indent">Notre-Dame-de-la-garde</h4>
+                </div>
+              </div>
+            </a>
+            <a href ='#'>
+              <div class = "card med-card card-style">
+                <img src ="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt = "Longchamp Park in Marseille" title = "Longchamp Park">
+                <div>
+                  <h4 class = "medium-text bold-text">Longchamp Park</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </article>
+      <br>
+    </main>  
+    <!--Ends the main section of the document-->
+    <footer class = "footer grey-background">
+      <!--Creates the document footer-->
+      <div class = "wrapper">
+        <!--Container for the elements in the foote3r-->
+        <div class = "col mob-margin">
+          <!--Container for each section of the footer-->
+          <h5 class = "medium-text bold-text">About</h5>
+          <a href="#" class = "medium-text">Site Map</a>
+          <a href="#" class = "medium-text">General Terms and Conditions</a>
+          <a href="#" class = "medium-text">Privacy</a>
+        </div>
+        <div class = "col mob-margin">
+          <h5 class = "medium-text bold-text">Our Accomodations</h5>
+          <a href="#" class = "medium-text">Quality Assesment</a>
+          <a href="#" class = "medium-text">You have a hotel?</a>
+        </div>
+        <div class = "col mob-margin">
+          <h5 class = "medium-text bold-text">Assistance</h5>
+          <a href="#" class = "medium-text">Hot Desk</a>
+          <a href="#" class = "medium-text">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
