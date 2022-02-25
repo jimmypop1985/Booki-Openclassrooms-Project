@@ -207,19 +207,18 @@ nav a:hover { /*When the navs are hovered over, a border is displayed underneath
   border: 3px solid #0065fc;
 }
 
-.big-container{ /*Sets the sryling for the accommodation and popular container 
+.big-container{ /*Sets the sryling for the accomodation and popular container 
   and ensures that the default for mobile and tablets is that the most popular appears first*/
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: center;
   width: 100%;
   background-color: #f2f2f2;
   justify-content: space-between;
 }
 
-.accom-container, .act-container{  /*Styles the common elements for mobile for the activities and accommodation sections for mobile*/
+.accom-container, .act-container{  /*Styles the common elements for mobile for the activities and accomodation sections for mobile*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -229,8 +228,12 @@ nav a:hover { /*When the navs are hovered over, a border is displayed underneath
   padding:20px;
 }
 
-.accom-container{ /*Sets the background colour for mobile displays for the accommodations section*/
+.accom-container{ /*Sets the background colour for mobile displays for the accomodations section*/
   background-color: #ffffff;
+}
+
+.accom-container .title{
+  margin-left: 15px;
 }
 
 .popular-container{  /*Styles the most popular section for mobile*/
@@ -245,7 +248,7 @@ nav a:hover { /*When the navs are hovered over, a border is displayed underneath
   padding-bottom: 25px;
 }
 
-.row-container{ /*Styles and aligns the cards in the accommodation section*/
+.row-container{ /*Styles and aligns the cards in the accomodation section*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -274,15 +277,15 @@ nav a:hover { /*When the navs are hovered over, a border is displayed underneath
   width: 120px;
 }
 
-.accommodation ,.card{ /*Displays the accommodation and activities cards in a column for mobile*/
+.accomodation ,.card{ /*Displays the accomodation and activities cards in a column for mobile*/
   flex-direction: column;
 }
 
-.accommodation, .popular{ /*Pads the cards for accommodation and popular sections*/
+.accomodation, .popular{ /*Pads the cards for accomodation and popular sections*/
   padding: 2px;
 }
 
-.accommodation img, .card img{/*Styles the images for the accommodation and activities sections for mobile*/
+.accomodation img, .card img{/*Styles the images for the accomodation and activities sections for mobile*/
   width: 100%;
   height: 100px;
   object-fit: cover;
@@ -296,7 +299,7 @@ nav a:hover { /*When the navs are hovered over, a border is displayed underneath
   padding:5px;
 }
 
-.container .medium-text, .container .bold-text{ /*Styles the text in the accommodation and popular sections*/
+.container .medium-text, .container .bold-text{ /*Styles the text in the accomodation and popular sections*/
   display: flex;
   width:100%;
   margin: 0 auto;
@@ -408,20 +411,20 @@ overridden when the desktop styles are implemented
     padding-top:40px;
   }
 
-  .big-container{ /*Changes the colour of the container for the accommodation and popular
+  .big-container{ /*Changes the colour of the container for the accomodation and popular
     sections and adds a space between the two sections*/
     gap:20px;
     background-color: white;
   }
 
-  .accommodation{ /*Sets desktop and tablet properties for the accommodation cards */
+  .accomodation{ /*Sets desktop and tablet properties for the accomodation cards */
     justify-content: space-between;
     width: 200px;
     height: 160px;
     display: flex;
   }
 
-  .accommodation img{ /*Sets the image properties for the accommodation cards*/
+  .accomodation img{ /*Sets the image properties for the accomodation cards*/
     object-fit: cover;
     height:90px;
     width:100%;
@@ -483,12 +486,12 @@ overridden when the desktop styles are implemented
 /* Desktop Styles - sets properties when the screen is at least 992 pixels wide*/
 @media only screen and (min-width: 992px) 
   {
-  .big-container{ /*Changes the container for the accommodation and popular
+  .big-container{ /*Changes the container for the accomodation and popular
     sections into a row from a reverse column, displaying the items in the correct order*/
     flex-direction: row;
   }
 
-  .accom-container{ /*Changes the properties for the accommodation section when on 
+  .accom-container{ /*Changes the properties for the accomodation section when on 
     a desktop */
     flex-wrap: wrap;
     height: 100%;
