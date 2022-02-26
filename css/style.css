@@ -221,10 +221,9 @@ nav a:hover { /*When the navs are hovered over, a border is displayed underneath
 .accom-container, .act-container{  /*Styles the common elements for mobile for the activities and accommodation sections for mobile*/
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: flex-start;
   border-radius: 20px;
   width: 100%;
-  gap: 10px;
   padding:20px;
 }
 
@@ -355,7 +354,6 @@ nav a:hover { /*When the navs are hovered over, a border is displayed underneath
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 
