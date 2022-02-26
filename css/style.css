@@ -355,8 +355,9 @@ nav a:hover { /*When the navs are hovered over, a border is displayed underneath
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
 
 /*Tablet styles, overwrites properties declared previously when the screen width 
 becomes larger than or equal to 768 pixels, some of these properties will be 
